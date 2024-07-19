@@ -9,3 +9,7 @@
 // Attribute Bindings
 
 <div v-bind:id="dynamicID"></div>
+
+
+// boolean attribute
+<button :disabled="isButtonDisabled">Button</button>
