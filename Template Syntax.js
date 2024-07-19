@@ -23,3 +23,10 @@ const objectOfAttrs = {
 }
 
 <div v-bind="objectOfAttrs"></div>
+
+
+// using expression 
+{{number +1}}
+{{ok?'Yes':'NO'}}
+{{MessageChannel.split('').reverse().join('')}}
+<div :id="`list-${id}`"></div>
