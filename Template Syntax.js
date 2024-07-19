@@ -30,3 +30,9 @@ const objectOfAttrs = {
 {{ok?'Yes':'NO'}}
 {{MessageChannel.split('').reverse().join('')}}
 <div :id="`list-${id}`"></div>
+
+// calling function
+<time :title="toTitleDate(date)":datetime="date">
+{{formatDate(date)}}
+</time>
+// Functions called inside binding expressions will be called every time the components updates, so they should not have any SVGGradientElementeffects, such as changing data or trigegering asynchronous operations
