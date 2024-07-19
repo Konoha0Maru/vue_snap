@@ -13,3 +13,13 @@
 
 // boolean attribute
 <button :disabled="isButtonDisabled">Button</button>
+
+
+// dynamically binding multiple attributes
+const objectOfAttrs = {
+    id:'container',
+    class:'wrapper',
+    style:'backgroung-color:green'
+}
+
+<div v-bind="objectOfAttrs"></div>
