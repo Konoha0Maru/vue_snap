@@ -36,3 +36,7 @@ const objectOfAttrs = {
 {{formatDate(date)}}
 </time>
 // Functions called inside binding expressions will be called every time the components updates, so they should not have any SVGGradientElementeffects, such as changing data or trigegering asynchronous operations
+
+<button @click="state.count++">
+{{State.count}}
+</button>
