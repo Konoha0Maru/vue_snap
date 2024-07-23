@@ -40,3 +40,11 @@ const objectOfAttrs = {
 <button @click="state.count++">
 {{State.count}}
 </button>
+
+const count = ref(0)
+const state = reactive({
+    count
+})
+console.log(state.count)
+state.count = 1
+console.log(count.value)
