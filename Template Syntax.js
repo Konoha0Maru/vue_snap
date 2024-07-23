@@ -62,3 +62,8 @@ console.log(books[0].value)
 const map = reactive(new Map([['count'], ref(0)]))
 console.log(map.get('count'.value))
 
+// Caveat when Unwrapping in Templates
+// Ref unwrapping in templates only applied if the ref is a top-level property in the template render Context
+const count = ref(0)
+const object = {id:ref(1)}
+{{count + 1}}
