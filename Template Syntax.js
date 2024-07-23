@@ -48,3 +48,10 @@ const state = reactive({
 console.log(state.count)
 state.count = 1
 console.log(count.value)
+
+const otherCount = ref(2)
+state.count = otherCount
+console.log(state.count)
+console.log(count.value)
+
+Caveat in Arrays and Collections
