@@ -54,4 +54,11 @@ state.count = otherCount
 console.log(state.count)
 console.log(count.value)
 
-Caveat in Arrays and Collections
+// Caveat in Arrays and Collections
+
+const books = reactive([ref('Vue 3 Guide')])
+console.log(books[0].value)
+
+const map = reactive(new Map([['count'], ref(0)]))
+console.log(map.get('count'.value))
+
